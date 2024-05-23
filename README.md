@@ -15,3 +15,7 @@
 
 在config.txt可以指定要翻譯的語言(繁體或簡體中文)，字體也能選擇，請確保語言與字體是符合的  
 zh-TW 為繁體 zh-CN 為簡體  
+
+字體來源 :  
+https://github.com/ButTaiwan/gensen-font/tree/master  
+https://github.com/lxgw/kose-font/tree/master  
