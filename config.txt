@@ -1,0 +1,2 @@
+language:zh-TW
+font:GenSenRounded-B.ttc

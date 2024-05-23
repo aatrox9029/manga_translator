@@ -1,0 +1,9 @@
+ultralytics
+opencv-python
+manga-ocr
+numpy
+translators
+pillow
+torch
+torchvision
+torchaudio
