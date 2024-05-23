@@ -3,6 +3,7 @@ import os
 import xml.etree.ElementTree as ET
 # from googletrans import Translator
 import time
+import shutil
 from manga_ocr import MangaOcr
 mocr = MangaOcr()
 # translator = Translator()
@@ -118,3 +119,13 @@ def clear_folder(folder_path):
                 os.rmdir(file_path)
         except Exception as e:
             pass
+
+def copy_if_not_detect(input,output):
+    input_folder=os.listdir(input)
+    output_folder=os.listdir(output)
+    need_copy=[]
+    for i in input_folder:
+        if i not in output_folder:
+            need_copy.append(i)
+    for i in need_copy:
+        shutil.copy(input+"/"+i,output+"/"+i)

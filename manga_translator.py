@@ -56,3 +56,4 @@ for i in xml_files:
         origin_img=auto_loc_put_text2(origin_img,all_info[o],fontpath)
     cv2.imwrite(folderpath+"/"+img_name,origin_img)
 clear_folder("./process/xml")
+copy_if_not_detect("./Input",folderpath)
